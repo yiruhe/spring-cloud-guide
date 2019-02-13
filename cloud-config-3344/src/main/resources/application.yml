@@ -1,0 +1,15 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  springcloud-config
+  cloud:
+    config:
+      server:
+        git:
+        # 码云上的远程库
+          uri: https://github.com/yiruhe/cloud-guide-config.git
+          # 读取的方式
+          # http://config-3344.com:3344/application-dev.yml
+          # http://config-3344.com:3344/application/dev/master
